@@ -60,12 +60,6 @@ Outputs will be generated in the `outputs/` folder:
 * `company_research.json` — Competitor analysis
 * `final_report.md` — Strategy report
 
-## Tech Stack
-
-* **Programming & Tools:** Python, SQL, Docker, FastAPI, CrewAI
-* **ML/AI:** LLMs (GPT-4, BERT), Regression, Classification, Clustering, PEFT fine-tuning (LoRA, QLoRA), Deep Learning
-* **GenAI & RAG:** LangChain, FAISS, Chroma, Sentence Transformers
-* **Data Analysis & Processing:** Pandas, NumPy, Tableau, Seaborn, Matplotlib, Power BI
 
 
 
