@@ -1,6 +1,3 @@
-Here’s a polished and complete README combining your draft with the specific details from your project and AI setup:
-
-````markdown
 # AutonomousMarketIntelligence Crew
 
 Welcome to the **AutonomousMarketIntelligence Crew** project, powered by [CrewAI](https://crewai.com).  
@@ -69,5 +66,6 @@ Outputs will be generated in the `outputs/` folder:
 * **ML/AI:** LLMs (GPT-4, BERT), Regression, Classification, Clustering, PEFT fine-tuning (LoRA, QLoRA), Deep Learning
 * **GenAI & RAG:** LangChain, FAISS, Chroma, Sentence Transformers
 * **Data Analysis & Processing:** Pandas, NumPy, Tableau, Seaborn, Matplotlib, Power BI
+
 
 
