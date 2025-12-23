@@ -1,0 +1,33 @@
+collect_market_data_task:
+  description: >
+    Gather news, filings, earnings reports, job postings, and trends
+    for companies in {topic} for the current year {current_year}.
+  expected_output: >
+    A list of TrendingCompany objects with name, ticker, and reason for trending
+  agent: researcher
+  output_file: outputs/trending_companies.json
+
+analyze_competitors_task:
+  description: >
+    Compare competitors in {topic} across revenue, growth, hiring trends,
+    product launches, and sentiment. Provide structured insights.
+  expected_output: >
+    A list of CompanyResearch objects containing market position,
+    future outlook, and investment potential
+  agent: competitor_analyzer
+  context:
+    - collect_market_data_task  
+  output_file: outputs/company_research.json
+
+generate_strategy_report_task:
+  description: >
+    Review collected research and competitor analysis. Generate a detailed
+    strategic report with actionable recommendations and insights for executives.
+  expected_output: >
+    A structured JSON report summarizing findings, trends, opportunities,
+    and risks, optionally formatted for a dashboard
+  agent: strategy_synthesizer
+  context:
+    # - collect_market_data_task
+    - analyze_competitors_task  
+  output_file: outputs/final_report.md
